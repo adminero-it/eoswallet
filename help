@@ -1,0 +1,52 @@
+#!/bin/bash
+clear
+
+cat << "EOF"
+888888  dP"Yb  .dP"Y8     888888 8b    d8 888888 88""Yb  dP""b8 888888     88""Yb  dP"Yb  88        db    88b 88 8888b.  
+88__   dP   Yb `Ybo."     88__   88b  d88 88__   88__dP dP   `" 88__       88__dP dP   Yb 88       dPYb   88Yb88  8I  Yb 
+88""   Yb   dP o.`Y8b     88""   88YbdP88 88""   88"Yb  Yb  "88 88""       88"""  Yb   dP 88  .o  dP__Yb  88 Y88  8I  dY 
+888888  YbodP  8bodP'     888888 88 YY 88 888888 88  Yb  YboodP 888888     88      YbodP  88ood8 dP""""Yb 88  Y8 8888Y"  
+EOF
+
+echo ""
+echo "this is EOS Emerge simple CLI interface for *SECURE* and *LOCAL* voting"
+echo "binaries compiled on Mac OS High Sierra, EOSIO tag v1.0.3"
+echo "snapshot files from https://github.com/eosphere/eos-snapshot-files/tree/master/final""
+echo ""
+echo " * run ./help for some help :)"
+echo " * use ./find-account if you want to check your record in snapshot file"
+echo " * use ./cleos script instead of ./bin/cleos which is configured for our secure fullnode server over https connection"
+echo ""
+echo "usage:"
+echo "if you not have any wallet - create default (recommended) or any other wallet file"
+echo "./cleos wallet create [-n walletname]   --> this create your wallet in eosio-wallet folder in your home directory - optional -n walletname parameter create <walletname> file"
+echo " *** remember your wallet password !!! ****"
+echo ""
+echo "if you have wallet created, and [./cleos wallet list] not showing it, use:"
+echo "./cleos wallet open -n default   (or any other name you created)"
+echo "unlock wallet with command:"
+echo "./cleos wallet unlock (you must have your wallet password)"
+echo ""
+echo "import your private key -- keep in mind - for your eyes only, be secure!"
+echo "./cleos wallet import <yourprivatekey>  --> this step is very important - without it you do not sign any transaction"
+echo ""
+echo "this is all configuration steps - its the moment when you may use your EOS and vote for your favorite producer i.e emergepoland :)"
+echo "some usefull commands of cleos:"
+echo "./cleos    --> print help"
+echo "./cleos get account <your 12 char account name>"
+echo './cleos system delegatebw <your 12 char account name> <12char producer name> "xx.0000 EOS" "xx.0000 EOS" -p <your 12char account name>'
+echo './cleos system undelegatebw <your 12 char account name> <12char producer name> "xx.0000 EOS" "xx.0000 EOS" -p <your 12 char account name>'
+echo ""
+echo './cleos system voteproducer prods <your 12 char account name> <12char producer name> -p <your 12 char account name>'
+echo ""
+echo "you may vote up to 30 producers by one command:"
+echo './cleos system voteproducer prods <your 12 char account name> <12char producer name> <12char producer name> [...] <12char producer name> -p <your 12 char account name>'
+echo ""
+echo "if you see error 'wallet locked' use: "
+echo "./cleos wallet unlock"
+echo "and type password for your wallet file"
+echo ""
+echo "thank you for your vote! remember our name? emergepoland ;)"
+
+
+

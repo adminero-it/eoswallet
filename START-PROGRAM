@@ -1,0 +1,13 @@
+#!/bin/bash
+################################################################################
+################################################################################
+
+
+killall -9 keosd
+killall -9 php
+echo "" > ./phpd.log
+echo "" > ./start_info.txt
+./cleos get info > start_info.txt
+nohup php -S localhost:8002 -t ./ > ./phpd.log 2>&1 &
+open http://localhost:8002
+

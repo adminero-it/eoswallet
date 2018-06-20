@@ -1,0 +1,80 @@
+#!/bin/bash
+################################################################################
+################################################################################
+clear
+LICZ=0
+
+echo ""
+echo ""
+echo "this tool will check final snapshot to find your individual record "
+echo ""
+echo "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***"
+echo "***                                                                         ***"
+echo "***        WARNING: enter only EOS PUBLIC KEY (starting with EOS)           ***"
+echo "***                 or ETH address (starting with Ox)                       ***"
+echo "***                                                                         ***"
+echo "*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***"
+echo ""
+echo ""
+
+
+    if [[ $PKEY -eq "" ]]; then 
+    echo -n $'\E[0;33m'
+    echo -ne "type/paste PUBLIC EOS key or ETH address (hit <enter> to skip):"
+    read PKEY
+    echo -n $'\E[0;37m'
+    fi
+
+
+    if [[ $PKEY == "" ]]; then 
+	echo "nothing to do, exit"
+	exit 1
+    else 
+
+	$(grep -Ei $PKEY ./snapshot.csv > ./your_snapshot_record.txt)
+
+
+	if [ -s ./your_snapshot_record.txt ];then
+
+	    for line in $(cat ./your_snapshot_record.txt); do
+
+		ETH=$(echo $line | awk -F',' '{ print $1 }')
+		ADDRESS=$(echo $line | awk -F',' '{ print $2 }')
+		EOSPUB=$(echo $line | awk -F',' '{ print $3 }')
+		TOKENS=$(echo $line | awk -F',' '{ print $4 }')
+
+	    done
+
+	    echo -ne " ETH address: $ETH\n EOS address: $ADDRESS\n EOS PUBLIC KEY: $EOSPUB\n TOKEN COUNT: $TOKENS\n"
+
+	else
+
+	    echo "Nothing found, searching unregistered accounts ..."
+	    $(grep -Ei $PKEY ./snapshot_unregistered.csv > ./your_snapshot_record.txt)
+
+
+	    if [ -s ./your_snapshot_record.txt ];then
+
+		for line in $(cat ./your_snapshot_record.txt); do
+
+		    ETH=$(echo $line | awk -F',' '{ print $1 }')
+		    ADDRESS=$(echo $line | awk -F',' '{ print $2 }')
+		    TOKENS=$(echo $line | awk -F',' '{ print $3 }')
+
+		done
+
+		echo -ne " ETH address: $ETH\n EOS address: $ADDRESS\n TOKEN COUNT: $TOKENS\n"
+
+		else
+		    echo "Nothing found. Try again."
+		fi
+
+	fi
+
+
+
+
+    fi
+
+
+
