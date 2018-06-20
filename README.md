@@ -12,10 +12,13 @@ binaries compiled on Ubuntu 18.4 LTS, EOSIO tag v1.0.5
 https://github.com/EOSIO/eos
 snapshot files from: https://github.com/eosphere/eos-snapshot-files/tree/master/final
 
-download tar.gz archive, 
-unpack it: tar -zxf eoswallet-master.tar.gz, 
 run terminal  
-navigate to eoswallet folder, type: 
+
+download tar.gz archive: wget https://gitlab.com/emergepoland/eoswallet/-/archive/master/eoswallet-master.tar.gz
+
+unpack it: tar -zxf eoswallet-master.tar.gz, 
+
+navigate to eoswallet-master folder, type: 
 
 cd eoswallet-master (or other folder where you unpack archive)
 
