@@ -12,10 +12,12 @@ binaries compiled on Ubuntu 18.4 LTS, EOSIO tag v1.0.5
 https://github.com/EOSIO/eos
 snapshot files from: https://github.com/eosphere/eos-snapshot-files/tree/master/final
 
-download, unpack, run terminal  
+download tar.gz archive, 
+unpack it: tar -zxf eoswallet-master.tar.gz, 
+run terminal  
 navigate to eoswallet folder, type: 
 
-cd eos-mac-wallet-master (or other folder where you unpack archive)
+cd eoswallet-master (or other folder where you unpack archive)
 
  * type ./help for some help :)
  * use ./find-account if you want to check your record in snapshot file
