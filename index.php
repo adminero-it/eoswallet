@@ -126,7 +126,7 @@
         <div class="row">
 
             <div class="col-lg-12 mx-auto" align="left" style="text-align: left;vertical-align: middle;">
-                <span id="storedaccounttxt" style="padding-right:20px;vertical-ali/gn: text-bottom;"></span>
+                <span id="storedaccounttxt" style="padding-right:20px;">no active account<br />click "change account"</span>
                 <input id="storedaccount" type="hidden" value="" />
                 <input id="accountinfo" name="" class="bt/n btn-default" type="button" value="get account info" style="vertical-align:text-bottom;display:none;" />
                 <input id="findaddress" class="bt/n btn-default" type="button" value="find address" style="vertical-align:text-bottom;" />
