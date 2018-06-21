@@ -71,7 +71,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">EOS Mac Wallet</h1>
+              <h1 class="brand-heading">EOS Wallet<span style="font-size:0.5em;">version tested on Ubuntu 18.4</span></h1>
               <p class="intro-text" style="margin-top: 60px;">A secure, local and free Wallet for EOS blockchain
                 <br>based on official EOSIO cleos </p>
               <a href="#wallet" class="btn btn-circle js-scroll-trigger">
