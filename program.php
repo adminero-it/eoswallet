@@ -279,18 +279,23 @@ if ($_POST['action'] == 'generatekey') {
 }
 
 if ($_POST['action'] == 'check') {
+    
+    $arch=shell_exec(uname);
 
-    if (file_exists("/usr/local/opt/llvm@4/lib/libc++.1.dylib")){
-        print('<span style="color:#009900;">&bullet; libc++ OK<br /></span>');
-    } else { 
-        print('<span style="color:red;">&bullet; libc++ FAIL<br /></span>');
-        $error=true; }
+    if ($arch == "Darwin"){
+            if (file_exists("/usr/local/opt/llvm@4/lib/libc++.1.dylib")){
+                print('<span style="color:#009900;">&bullet; libc++ OK<br /></span>');
+            } else { 
+                print('<span style="color:red;">&bullet; libc++ FAIL<br /></span>');
+                $error=true; }
+        
+            if (file_exists("/usr/local/opt/gettext/lib/libintl.8.dylib")){
+                print('<span style="color:#009900;">&bullet; libintl OK<br /></span>');
+            } else { 
+                print('<span style="color:red;">&bullet; libintl FAIL<br /></span>');
+                $error=true; }
+    }
 
-    if (file_exists("/usr/local/opt/gettext/lib/libintl.8.dylib")){
-        print('<span style="color:#009900;">&bullet; libintl OK<br /></span>');
-    } else { 
-        print('<span style="color:red;">&bullet; libintl FAIL<br /></span>');
-        $error=true; }
 
     if (file_exists($pwd."/bin/cleos")){
         print('<span style="color:#009900;">&bullet; cleos OK<br /></span>');
