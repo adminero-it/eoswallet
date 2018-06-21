@@ -21,7 +21,7 @@ USAGE:
 
 if you want graphical interface run
 4. ./START-PROGRAM 
-5. open web browser and go to http://[<your-ip-address>]:8001
+5. open web browser and go to http://[your-ip-address]:8001
 
 
 or better use your beautyfull terminal :)
