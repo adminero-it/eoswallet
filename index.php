@@ -72,7 +72,7 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h1 class="brand-heading" style="padding-bottom:5px;">EOS Wallet</h1>
-              <h4 style="font-size:0.5em;margin-top:0px;">version tested on Ubuntu 18.4</h4>
+              <h4 style="font-size:0.5em;margin-top:0px;">version tested on Ubuntu 18.04 LTS server</h4>
               <p class="intro-text" style="margin-top: 60px;">A secure, local and free Wallet for EOS blockchain
                 <br>based on official EOSIO cleos </p>
               <a href="#wallet" class="btn btn-circle js-scroll-trigger">
