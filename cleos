@@ -2,5 +2,5 @@
 ################################################################################
 ################################################################################
 
-CLEOS=/home/eoswallet/bin/cleos
+CLEOS=/home/eoswallet/eoswallet/bin/cleos
 $CLEOS -u https://dc1.eosemerge.io:5443 --wallet-url http://127.0.0.1:5555 "$@"
