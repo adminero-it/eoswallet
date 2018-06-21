@@ -195,7 +195,7 @@
           <div id="activeaccount" class="col-lg-3 mx-auto" align="left" style="mar/gin: 5px;border:1px solid white;width:100%;height:100%;min-height:350px;max-height:350px;overflow:auto;">
               <h4 style="border-bottom:1px solid white;margin-bottom: 5px;">active account</h4>
                   <span id="accountbox" style="font-size: 0.7em;line-height: normal;">
-                    &nbsp;
+                    no active account<br />"change account" on Vote page
                   </span>
 
           </div>
