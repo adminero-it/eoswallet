@@ -17,13 +17,14 @@ USAGE:
 
 1. run terminal  
 2. clone from gitlab: git clone https://gitlab.com/emergepoland/eoswallet.git
-3. navigate to eoswallet folder: cd eoswallet-master
+3. navigate to eoswallet folder: cd eoswallet
 
 if you want graphical interface run
 4. ./START-PROGRAM 
+5. open web browser and go to http://<your-ip-address>:8001
 
 
-or use your beautyfull terminal :)
+or better use your beautyfull terminal :)
 
  * type ./help for some help :)
  * use ./find-account if you want to check your record in snapshot file
