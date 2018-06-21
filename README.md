@@ -12,29 +12,28 @@ binaries compiled on Ubuntu 18.4 LTS, EOSIO tag v1.0.5
 https://github.com/EOSIO/eos
 snapshot files from: https://github.com/eosphere/eos-snapshot-files/tree/master/final
 
-run terminal  
 
-download tar.gz archive: wget https://gitlab.com/emergepoland/eoswallet/-/archive/master/eoswallet-master.tar.gz
+USAGE:
 
-unpack it: tar -zxf eoswallet-master.tar.gz, 
+1. run terminal  
+2. clone from gitlab: git clone https://gitlab.com/emergepoland/eoswallet.git
+3. navigate to eoswallet folder: cd eoswallet-master
 
-navigate to eoswallet-master folder, type: 
+if you want graphical interface run
+4. ./START-PROGRAM 
 
-cd eoswallet-master (or other folder where you unpack archive)
+
+or use your beautyfull terminal :)
 
  * type ./help for some help :)
  * use ./find-account if you want to check your record in snapshot file
  * use ./cleos script instead of ./bin/cleos which is configured for our secure fullnode server over https connection
 
-if you not familiar with CLI interface please feel free to ask us on our telegram channel https://t.me/eosemerge or by email: support@eosemerge.io
+if you have any problems please feel free to ask us on our telegram channel https://t.me/eosemerge or by email: support@eosemerge.io
+
 
 *******************************************************************************
- and now, we created WWW interface! just type:
-
-./START-PROGRAM 
-
-from your terminal, and forget about black and white screen!
-more improvements comming soon, be ready! and of course vote for us :)
+    more improvements comming soon, be ready! and of course vote for us :)
 *******************************************************************************
 
 </pre>
