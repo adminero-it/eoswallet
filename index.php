@@ -366,9 +366,9 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://gitlab.com/emergepoland/" class="btn btn-default btn-lg">
-                  <i class="fa fa-gitlab fa-fw"></i>
-                  <span class="network-name">Gitlab</span>
+                <a href="https://github.com/emergepoland/" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
                 </a>
               </li>
               <li class="list-inline-item">
