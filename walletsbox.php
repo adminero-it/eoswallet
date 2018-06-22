@@ -26,7 +26,7 @@ if ($_POST['action'] == 'refresh') {
                     print("<div class=\"row\">");
                     print("<input class=\"\" id=\"impass-$wallet[0]\" name=\"walletprivkey\" type=\"text\" placeholder=\"type private key\" />");
                     print("<input class=\"lockbtn bt/n btn-default \" type=\"button\" value=\"lock wallet\" id=\"$wallet[0]\" />");
-                    print("<input class=\"importbtn bt/n btn-default \" type=\"button\" value=\"import private key\" id=\"$wallet[0]\" />");
+                    print("<input class=\"importbtn bt/n btn-default \" type=\"button\" value=\"import private key\" id=\"$wallet[0]\" autocomplete=\"off\" />");
                     print("<input class=\"delbtn bt/n btn-default\" type=\"button\" value=\"delete wallet\" id=\"$wallet[0]\" />");
                     print("</div>");
                 }
