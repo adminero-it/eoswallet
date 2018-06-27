@@ -204,8 +204,7 @@ if ($_POST['action'] == 'bidnameinfoext') {
 }
 
 if ($_POST['action'] == 'newaccount') {
-//print_r($_POST);
-    //./cleos.sh system newaccount --transfer --stake-net "0.4500 EOS" --stake-cpu "0.4500 EOS" --buy-ram "0.1000 EOS" hezdsmrwgyge emergepoland EOS6q7cb72sZuU71cXHTNtkDaexQUKX8NXeotZY13QH9okH1tzDwH EOS7ghyBJsLyNiyJBwLDnRBUCfNcYENeqiZb1hAjS5yhHA4KmpMRn
+
     $i = exec('./cleos system newaccount --transfer --stake-net "'.$_POST['stakenet'].' EOS" --stake-cpu "'.$_POST['stakecpu'].' EOS" --buy-ram "'.$_POST['buyram'].' EOS" '.$_POST['creator'].' '.$_POST['name'].' '.$_POST['ownerkey'].' '.$_POST['activekey'].' 2>&1',$o,$r);
 
 
