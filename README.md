@@ -8,7 +8,7 @@
 this is EOS Emerge CLI and WWW interface for *SECURE* and *LOCAL* voting for Ubuntu 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-binaries compiled on Ubuntu 18.04 LTS server, EOSIO tag v1.0.7
+binaries compiled on Ubuntu 18.04 LTS server, EOSIO tag v1.0.8
 https://github.com/EOSIO/eos
 snapshot files from: https://github.com/eosphere/eos-snapshot-files/tree/master/final
 
